@@ -1,0 +1,166 @@
+/*comentario elemento (propiedad valor;)*/
+
+/*font-family, @font-face*/
+
+
+
+
+@font-face {
+    /*pide poner un nombre para relacionar la tipografia y aplicarla*/
+    font-family: amigo;
+    src: url("../"); /*aca va la carpeta*/
+}
+.roboto-thin {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+
+/*codigos para cambiar la fuente*/
+ h1 {color: darkblue;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 50px;
+font-style: italic;
+font-weight: bold;
+text-decoration: underline;
+text-align: center;}
+h4{color: 
+darkblue;}
+h4{font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 50px;
+font-style: italic;
+font-weight: bold;
+text-align: center;
+text-decoration: underline;
+}
+font-size: 20px;}
+
+header nav ul li{
+   ; list-style: none;
+}
+ header nav ul li{color: maroon;}
+h1{background-color: hotpink;}
+h4{background-color: hotpink;}
+]
+section pv{
+    color: brown;}
+
+/*unidadad de medida absoluta*/
+p{font-size: 20px;
+margin: 40px;}
+
+/*unidad de metidas relativas*/
+.amigo-cont{width: 100px;}
+.amigo-cont{width: 10%;}
+a{font-size: 2rem;} /*16px default HTML*/
+/*rem es relativo al tamaño del elemento root*/
+
+ul li{font-size: 2em;} /*medida default que vos elijas*/
+/*antes de usarlo tengo que arriba hay que definirla */
+
+/*se habilitan los cuatro lado
+div{position: relative; top: ;
+    position: absolute;
+    position: fixed; top: ;
+    position: sticky; top: ;
+    z-index: ;}*/
+    /*GRID*/
+    .grid-container{
+        /*display grid*/
+        display: grid;
+        /*definimos filas + unidades de medida / Template-rows *4 */
+        grid-template-rows: 80px 80px;
+        /*tienen como opcion la funcion Repart */
+        grid-template-rows: repeat(3, 80px);
+        border: 3px solid black;
+        /*Existe una unidad de medida q se llama "fr" de fraccion
+        q es la q nos ayuda a q se separta el espacio relativamente
+        y funcione mejor en responsive*/
+        /*definimos columnas + unidades de medida / template-colums *4 */
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: repeat(3 1fr);
+        /*especie de margin entr celdas/ grid-gap, row-gap, column-gap */
+    }
+    .grid-item {
+        border: 1px solid black;
+    }
+    .first-item {
+        /*como empieza y termina/ en que columna y q fila/ grid-columns, grid-now*/
+        grid-column: 1/3;
+        grid-row: 1/3;
+        grid-column-start: 1;
+        grid-column-end:4 ;
+        grid-row-start:1 ;
+        grid-row-end: 3;
+        /*span en cambio le dice q ocupe columns o rows*/ 
+        grid-row: 1/ span 3;
+        grid-column: 1/ span 2;
+     }
+     #grilla {
+        display: grid;
+        grid-template-rows: 100px 1fr 1fr 75px;
+        grid-template-columns: 20% 1fr 15%;
+        grid-template-areas: 
+        "nav haeder header"
+        "nav productos aside"
+        "nav servicios aside"
+        "footer footer footer";
+     }
+     .border {
+        border: 1px solid black;
+     }
+     .header {
+        grid-area: haeder ;
+     }
+     #productos {
+        grid-area: productos;
+     }
+     #servicios{
+        grid-area: servicios;
+      }
+      .aside {
+        grid-area: aside;
+      }
+      .nav {
+        grid-area: nav;
+      }
+      .footer {
+        grid-area: footer;
+      }
+/*link*/
+.enlace-uno{
+  text-decoration: none;
+  color: green;
+}
+.enlace-uno:link{
+   text-decoration: underline;
+   color: blueviolet;
+}
+.enlace-dos{
+   color: coral;
+   text-decoration: overline;
+
+}
+/*hover*/
+.enlace-dos:hover{
+   color: blueviolet;
+}
+/*visited*/
+.enlace-dos:visited{
+   color: violet;
+}
+/*not*/
+div:not(.enlace-cuatro){
+   font-size: 30px;
+}
+/*nth-child*/
+div:nth-child(2){
+   color: blue;
+}
+
+
+
+
+
